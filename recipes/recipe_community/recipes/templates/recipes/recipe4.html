@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beef Tacos</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <main>
+        <section class="recipe-detail">
+            <h2>Beef Tacos</h2>
+            <img src="{% static 'images/recipes4.png' %}" alt="Recipe 1">
+            <p><strong>Description:</strong>Flavorful ground beef seasoned with taco spices, served in crispy taco shells with your favorite toppings</p>
+            <p><strong>Ingredients:</strong></p>
+            <ul>
+                <li type = none>500g ground beef
+                </li>
+                <li type = none> 1 onion, chopped
+
+                </li>
+                <li type = none> 2 cloves garlic, minced
+
+                </li>
+                <li type = none> 1 packet taco seasoning
+                </li>
+                <li type = none> 1/2 cup water
+                </li>
+                <li type = none>Diced tomatoes
+                </li>
+                <li type = none>Taco shells or tortillas
+                </li>
+            </ul>
+            <p><strong>Instructions:</strong></p>
+            <ol>
+                <li type = none>In a skillet, cook ground beef with onion and garlic until browned. Drain excess fat.
+                </li>
+                <li type = none>Stir in taco seasoning and water. Simmer for 5 minutes until thickened.</li>
+                <li type = none>Spoon beef mixture into taco shells or tortillas.
+                </li>
+                <li type = none>Top with lettuce, tomatoes, cheese, and sour cream if desired.
+                </li>
+            </ol>
+            <a href="{% url 'home' %}">Back to Home</a>
+        </section>
+    </main>
+</body>
+</html>

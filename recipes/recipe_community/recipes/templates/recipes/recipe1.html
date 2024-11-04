@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaghetti Carbonara</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <main>
+        <section class="recipe-detail">
+            <h2>Spaghetti Carbonara</h2>
+            <img src="{% static 'images/recipes1.png' %}" alt="Recipe 1">
+            <p><strong>Description:</strong>Classic Italian pasta dish with a creamy, cheesy sauce made from eggs and Parmesan, combined with crispy pancetta.</p>
+            <p><strong>Ingredients:</strong></p>
+            <ul>
+                <li type = none>200g spaghetti</li>
+                <li type = none>100g pancetta, diced
+                </li>
+                <li type = none>2 large eggs
+                </li>
+                <li type = none>50g Parmesan cheese, grated</li>
+                <li type = none>2 cloves garlic, minced</li>
+                <li type = none>Salt and black pepper, to taste</li>
+                <li type = none>2 tbsp olive oil</li>
+            </ul>
+            <p><strong>Instructions:</strong></p>
+            <ol>
+                <li type = none>Cook the spaghetti in salted boiling water until al dente. Drain and reserve some pasta water.</li>
+                <li type = none>In a pan, heat olive oil over medium heat and cook pancetta until crispy. Add garlic and cook for 1 minute.</li>
+                <li type = none>In a bowl, whisk eggs and Parmesan together.</li>
+                <li type = none>Toss the spaghetti in the pan with pancetta and garlic. Remove from heat and quickly stir in the egg mixture, adding a bit of reserved pasta water if needed to create a creamy sauce.</li>
+                <li type = none>Season with salt and black pepper. Serve immediately.
+                </li>
+            </ol>
+            <a href="{% url 'home' %}">Back to Home</a>
+        </section>
+    </main>
+</body>
+</html>

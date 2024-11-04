@@ -1,0 +1,85 @@
+/* Basic styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background for the entire page */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #b5aeae; /* Light background color for the header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Page title */
+h1 {
+    margin: 0;
+    color: #333;
+}
+
+/* Center the main section with light background */
+main {
+    background-color:  #bbb3b381; /* Light background color for the main section */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Styling for the recipes section */
+#recipes {
+    padding: 20px;
+}
+
+/* Container for recipe summaries */
+.recipe-summary {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Styling for each recipe image */
+.recipe-summary img {
+    width: 100%;
+    max-width: 300px; /* Optional: limit the size of the images */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for recipe titles */
+.recipe-summary h3 {
+    margin: 10px 0;
+    color: #333;
+    font-size: 1.2em;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ded6d6ee; /* Light background color for the footer */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.back-to-home {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007bff82; /* Primary button color */
+    color: #887e7e; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.533); /* Shadow for depth */
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.back-to-home:hover {
+    background-color: #0056b3; /* Darker color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}

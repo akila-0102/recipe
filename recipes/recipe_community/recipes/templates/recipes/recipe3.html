@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable Soup</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <main>
+        <section class="recipe-detail">
+            <h2>Vegetable Soup</h2>
+            <img src="{% static 'images/recipes3.png' %}" alt="Recipe 1">
+            <p><strong>Description:</strong>A hearty and nutritious soup loaded with vegetables and herbs, perfect for a light and comforting meal.
+            </p>
+            <p><strong>Ingredients:</strong></p>
+            <ul>
+                <li type = none>1 onion, chopped
+                </li>
+                <li type = none>2 cloves garlic, minced
+
+                </li>
+                <li type = none>1 zucchini, diced
+                </li>
+                <li type = none>4 cups vegetable broth
+                </li>
+                <li type = none>Salt and pepper, to taste
+                </li>
+                <li type = none>1 tsp dried thyme
+                </li>
+                <li type = none>2 tbsp olive oil</li>
+            </ul>
+            <p><strong>Instructions:</strong></p>
+            <ol>
+                <li type = none>Heat olive oil in a large pot over medium heat. Sauté onion and garlic until translucent.</li>
+                <li type = none>Add carrots and celery, cooking for 5 minutes.</li>
+                <li type = none>Stir in zucchini, green beans, tomatoes, and vegetable broth. Add thyme and basil.
+                </li>
+                <li type = none>Bring to a boil, then reduce heat and simmer for 20-25 minutes.
+                </li>
+                <li type = none>Season with salt and pepper. Serve hot.
+
+                </li>
+            </ol>
+            <a href="{% url 'home' %}">Back to Home</a>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Stir-Fry</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <main>
+        <section class="recipe-detail">
+            <h2>Chicken Stir-Fry</h2>
+            <img src="{% static 'images/recipes2.png' %}" alt="Recipe 1">
+            <p><strong>Description:</strong>A quick and flavorful stir-fry with tender chicken and crisp vegetables, coated in a savory-sweet sauce.
+            </p>
+            <p><strong>Ingredients:</strong></p>
+            <ul>
+                <li type = none>2 chicken breasts, sliced thinly </li>
+                <li type = none>1 bell pepper, sliced</li>
+                <li type = none>1 cup broccoli florets </li>
+                <li type = none> 1 carrot, julienned                </li>
+                <li type = none> 2 tbsp hoisin sauce
+                </li>
+                <li type = none> 3 tbsp soy sauce
+                </li>
+                <li type = none>1 tbsp olive oil</li>
+            </ul>
+            <p><strong>Instructions:</strong></p>
+            <ol>
+                <li type = none> Heat olive oil and sesame oil in a pan over medium-high heat. Add garlic and ginger, cooking until fragrant.
+                </li>
+                <li type = none>Add chicken slices and cook until browned and cooked through.
+                </li>
+                <li type = none>Add vegetables and stir-fry for 5-7 minutes until tender-crisp.
+                </li>
+                <li type = none>TStir in soy sauce and hoisin sauce. Cook for another 2 minutes.</li>
+                <li type = none>Serve over rice or noodles.
+                </li>
+            </ol>
+            <a href="{% url 'home' %}">Back to Home</a>
+        </section>
+    </main>
+</body>
+</html>
